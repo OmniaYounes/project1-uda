@@ -1,0 +1,41 @@
+{
+  "name": "project1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.ts",
+    "build": "npx tsc",
+    "start": "npm run build && nodemon src/index.ts",
+    "test": "npm run build && jasmine",
+    "format": "prettier --write src/**/*.ts",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/*.ts --fix",
+    "jasmine": "jasmine"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.14",
+    "@types/jasmine": "^4.3.0",
+    "@types/node": "^18.7.19",
+    "@types/nodemon": "^1.19.2",
+    "@types/sharp": "^0.31.0",
+    "jasmine": "^4.4.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.3"
+  },
+  "dependencies": {
+    "@types/supertest": "^2.0.12",
+    "express": "^4.18.1",
+    "fs": "^0.0.1-security",
+    "fs-extra": "^10.1.0",
+    "jasmine-spec-reporter": "^7.0.0",
+    "jasmine-supertest": "^1.0.0",
+    "prettier": "^2.7.1",
+    "save-dev": "^0.0.1-security",
+    "sharp": "^0.31.0",
+    "supertest": "^6.2.4"
+  }
+}
